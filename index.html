@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christopher K. Munyeneh | Graphic Designer</title>
+<meta name="description" content="Graphic designer and cybersecurity student. Social media graphics, flyers, and celebration designs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F6F7F9;
+    --ink: #181B22;
+    --muted: #5F6675;
+    --line: #DDE0E6;
+    --tile: #E7E9EE;
+    --accent: #2D4BF0;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+  a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 4px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+  header.top { display: flex; justify-content: space-between; padding: 28px 0; font-weight: 600; }
+  header.top nav { display: flex; gap: 24px; }
+  header.top a { text-decoration: none; }
+
+  .hero { padding: 64px 0 88px; }
+  .hero h1 {
+    font-size: clamp(3rem, 11vw, 8rem);
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    font-weight: 800;
+    margin: 0 0 32px;
+  }
+  .hero p { max-width: 34em; font-size: 1.25rem; color: var(--muted); margin: 0; }
+
+  h2 { font-size: 1.75rem; letter-spacing: -0.02em; margin: 0 0 32px; }
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px 24px; }
+  .work figure { margin: 0; }
+  .tile {
+    min-height: 240px;
+    background: var(--tile);
+    border-radius: 6px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .tile img { width: 100%; height: auto; display: block; }
+  .work.wide .tile.big { aspect-ratio: 16 / 9; }
+  figcaption { margin-top: 12px; }
+  figcaption strong { display: block; font-weight: 600; }
+  figcaption span { color: var(--muted); font-size: 0.95rem; }
+
+  .about { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+  .about p { margin: 0 0 16px; max-width: 34em; }
+  dl { margin: 0; }
+  dt { font-weight: 600; }
+  dd { margin: 0 0 20px; color: var(--muted); }
+
+  .contact a.big { font-size: clamp(1.5rem, 5vw, 2.75rem); font-weight: 600; letter-spacing: -0.02em; }
+  .contact ul { list-style: none; padding: 0; margin: 24px 0 0; display: flex; flex-wrap: wrap; gap: 8px 28px; }
+  footer { padding: 40px 0 56px; color: var(--muted); font-size: 0.9rem; }
+
+  @media (max-width: 720px) {
+    .grid, .about { grid-template-columns: 1fr; }
+    .hero { padding: 40px 0 56px; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- EDIT: your name -->
+  <header class="top">
+    <span>Christopher K. Munyeneh</span>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- EDIT: headline and intro -->
+  <main>
+    <div class="hero">
+      <h1>Graphic designer who understands security.</h1>
+      <p>I’m Christopher, a cybersecurity student who designs social media graphics, promo flyers, and celebration posts. I work fast, take feedback well, and keep every design clear and easy to read.</p>
+    </div>
+
+    <!--
+      EDIT: SELECTED WORK
+      1. Put your images in a folder called "images" next to this file.
+      2. Name them project-1.jpg, project-2.jpg, and so on (or change the src below).
+      3. Change the title and description under each image.
+      To add a project, copy one <figure> block and paste it below the last one.
+    -->
+    <section id="work" class="work">
+      <h2>Selected work</h2>
+      <div class="grid">
+        <figure>
+          <div class="tile"><img src="project-1.jpg" alt="Gold-themed Happy Birthday graphic with balloons, ribbons, and a crown" onerror="this.remove()"><span>Project 1 image</span></div>
+          <figcaption><strong>Birthday celebration graphic</strong><span>Social media post with a gold balloon and ribbon theme, layered typography, and a date badge. Made in Canva.</span></figcaption>
+        </figure>
+        <figure>
+          <div class="tile"><img src="project-2.jpg" alt="Red and gold promotional flyer for Aggie’s Meat Pie and Bread" onerror="this.remove()"><span>Project 2 image</span></div>
+          <figcaption><strong>Aggie’s Meat Pie &amp; Bread</strong><span>Promo flyer for a local bakery with a bold headline, price badges, and clear order details. Made in Canva.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- EDIT: about text and tools -->
+    <section id="about" class="about">
+      <div>
+        <h2>About</h2>
+        <p>I’m Christopher K. Munyeneh, a high school graduate studying cybersecurity. I design in Canva and keep learning other tools to grow my skills.</p>
+        <p>I also have some video directing and editing experience, so I can support video content too. I learn quickly, and I welcome correction because it makes my work better.</p>
+      </div>
+      <dl>
+        <dt>Design tools</dt>
+        <dd>Canva (currently learning more tools)</dd>
+        <dt>Services</dt>
+        <dd>Social media graphics, promo flyers, birthday and celebration designs</dd>
+        <dt>Bonus skills</dt>
+        <dd>Cybersecurity knowledge, basic video directing and editing</dd>
+      </dl>
+    </section>
+
+    <!-- EDIT: email and links -->
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <a class="big" href="mailto:cmunyenehk101@gmail.com">cmunyenehk101@gmail.com</a>
+      
+    </section>
+  </main>
+
+  <footer>© 2026 Christopher K. Munyeneh</footer>
+</div>
+</body>
+</html>
